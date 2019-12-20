@@ -1,15 +1,12 @@
-html {
-	font-size: 18px;
-}
-
 body {
-	background-color: #FFF8EE;
+	background-color: #FFF;
 	color: #282624;
 }
 
 header {
+  padding: 1rem 0;
 	background-color: #282624;
-	color: #FFF8EE;
+	color: #FFF;
 }
 
 main {
@@ -17,28 +14,72 @@ main {
 	margin-bottom: 3.25rem;
 }
 
-footer {
-	background-color: #006D6D;
-	color: #FFF8EE;
+section {
+  margin-bottom: 5rem;
 }
 
 ul, ol {
 	list-style: none;
 	padding-left: 0;
+  margin-bottom: 2em;
 }
 
-li:before {
-	content: '- ';
+li {
+  margin-bottom: 0.5em;
 }
 
-.sidebar {
-	color: #5D5753;
-	font-size: 0.833em;
+a {
+  text-decoration: none;
+  color: #282624;
 }
 
+svg {
+  margin-bottom: 5rem;
+  max-width: 100%;
+  height: 75px;
+  width: auto;
+}
 
+svg path {
+  fill: #282624;
+  stroke: #282624;
+}
 
-/* for testing purposes only! */
-/* aside, section {
-outline: 1px solid red;
-} */
+.logos-column svg {
+  margin-right: 3rem;
+  height: 125px;
+}
+
+.logos-superscript svg {
+  display: block;
+  height: 50px;
+}
+
+.logos-fraction svg {
+  display: block;
+  height: 100px;
+  margin-right: 0;
+}
+
+/* Dark mode */
+.dark-mode body {
+	background-color: #002145;
+	color: #FFF;
+}
+
+.dark-mode header {
+	background-color: #FFF;
+	color: #002145;
+}
+
+.dark-mode a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.dark-mode svg path,
+.dark-mode svg path,
+.dark-mode svg path {
+  fill: #FFF;
+  stroke: #FFF;
+}
