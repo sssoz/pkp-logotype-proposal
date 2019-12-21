@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/inter.css">
 	<link rel="stylesheet" href="css/typography.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/range.css">
 
 	<meta name="theme-color" content="#282624">
 </head>
@@ -33,11 +34,12 @@
 
 	<main class="container">
     <section>
-      <a href="#" id="darkLightToggler" title="Toggle between dark mode and light mode">&rarr; Toggle colours</a>
+      <h2>Settings</h2>
+      <p>&rarr; <a href="#" id="darkLightToggler" title="Toggle between dark mode and light mode">Toggle colours</a></p>
+      <p>&rarr; Smaller <input id="resizer" type="range" min="50" max="200" value="" /> Larger</p>
     </section>
 
     <section class="logos-main">
-      <h2>Main logotype</h2>
       <div class="row">
         <div class="col-2">
           <?xml version="1.0" encoding="UTF-8"?>
@@ -55,6 +57,7 @@
           </svg>
         </div>
         <div class="col-1">
+          <h2>Main logotype</h2>
           <ul>
             <li>Should be the first choice when representing the PKP brand (?)</li>
             <li>Horizontal</li>
@@ -70,7 +73,6 @@
 
 
     <section class="logos-column">
-      <h2>Column</h2>
       <div class="row">
         <div class="col-2">
           <?xml version="1.0" encoding="UTF-8"?>
@@ -120,6 +122,7 @@
           </svg>
         </div>
         <div class="col-1">
+          <h2>Column</h2>
           <ul>
             <li>Vertical</li>
             <li>Seen in page footers</li>
@@ -135,7 +138,6 @@
 
 
     <section class="logos-superscript">
-      <h2>Superscript</h2>
       <div class="row">
         <div class="col-2">
           <?xml version="1.0" encoding="UTF-8"?>
@@ -195,6 +197,7 @@
           </svg>
         </div>
         <div class="col-1">
+          <h2>Superscript</h2>
           <ul>
             <li>Horizontal</li>
             <li>Seen in page headers , page footers</li>
@@ -212,7 +215,6 @@
 
 
     <section class="logos-fraction">
-      <h2>Fraction</h2>
       <div class="row">
         <div class="col-2">
           <?xml version="1.0" encoding="UTF-8"?>
@@ -252,6 +254,7 @@
           </svg>
         </div>
         <div class="col-1">
+          <h2>Fraction</h2>
           <ul>
             <li>Vertical</li>
             <li>Seen in footers, bottom right</li>
@@ -288,6 +291,17 @@
 		}, false);
 
 	})(window, document);
+
+  // Logo resizer
+  var r     = document.getElementById('resizer'),
+      elems = document.querySelectorAll('svg');
+
+  r.addEventListener("input", function() {
+    elems.forEach(elems => {
+      elems.style.height = r.value + 'px';
+    });
+  }, false);
+
   </script>
 
 </body>
