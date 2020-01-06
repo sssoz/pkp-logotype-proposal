@@ -65,6 +65,10 @@ svg path {
 	color: #FFF;
 }
 
+.dark-mode section {
+  border-bottom: 1px solid #FFF;
+}
+
 .dark-mode header {
 	background-color: #FFF;
 	color: #002145;
