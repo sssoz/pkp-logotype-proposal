@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+{% include head.html %}
+
+<body>
+	<!--[if IE]>
+	<p class="browserupgrade">You are using an outdated browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+	<header>
+		<div class="container">
+      <h1 class="sr-only">PKP Logos</h1>
+      {% include horizontal-pkp.svg %}
+		</div>
+	</header>
+
+	<main>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <h2>Learn how best to use PKP’s logotypes on your platform.</h2>
+            <p><button href="#" id="darkLightToggler" title="Toggle between dark mode and light mode">Toggle colours</button></p>
+            <p>
+              Smaller <input id="resizer" type="range" min="40" max="200" value="" /> Larger<br/>
+              <small>Current height: <span id="size">200px</span></small>
+            </p>
+            <p><a href="#">Contact us</a></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container logos">
+      <h2 class="sr-only">All logos by type</h2>
+
+      <section class="logos-main">
+        <div class="row">
+          <div class="col-2">
+            <h3>Main logotype</h3>
+            <ul>
+              <li>Should be the first choice when representing the PKP brand</li>
+              <li>Horizontal</li>
+              <li>Use in page headers , page footers</li>
+            </ul>
+          </div>
+        </div>
+
+        {% include horizontal-pkp.svg %}
+      </section>
+
+      <hr/>
+
+      <section class="logos-column">
+        <div class="row">
+          <div class="col-2">
+            <h3>Column</h2>
+            <ul>
+              <li>Vertical</li>
+              <li>Use in page footers</li>
+            </ul>
+          </div>
+        </div>
+
+        {% include vertical-pkp.svg %}
+
+        {% include vertical-ojs.svg %}
+
+        {% include vertical-omp.svg %}
+
+        {% include vertical-ops.svg %}
+
+      </section>
+
+      <hr/>
+
+      <section class="logos-superscript">
+        <div class="row">
+          <div class="col-2">
+            <h3>Superscript</h3>
+            <ul>
+              <li>Horizontal</li>
+              <li>Use in page headers , page footers</li>
+              <li>The superscript is used for “satellite” services, such as Docs, School, Publishing Services, Community Forum</li>
+            </ul>
+            <ul>
+              <li>Each word is separated by a line break</li>
+              <li>If two lines: size up 10% </li>
+              <li>If single line: size up 20% </li>
+              <li>First word of the service is raised above the ”PKP” logotype by about half of the height of the “O”</li>
+            </ul>
+          </div>
+        </div>
+
+        {% include super-community-forum.svg %}
+
+        {% include super-docs.svg %}
+
+        {% include super-publishing-services.svg %}
+
+        {% include super-school.svg %}
+      </section>
+
+      <hr/>
+
+      <section class="logos-fraction">
+        <div class="row">
+          <div class="col-2">
+            <h3>Fraction</h3>
+            <ul>
+              <li>Vertical</li>
+              <li>Use in footers, always on bottom right</li>
+              <li>In-software branding only</li>
+            </ul>
+          </div>
+        </div>
+
+        {% include slash-ojs.svg %}
+
+        {% include slash-omp.svg %}
+
+        {% include slash-ops.svg %}
+
+      </section>
+
+      <hr/>
+
+      <section>
+        <h3>Logo use: examples</h3>
+        <div class="col-2">
+          <ul>
+            <li>
+              <a href="pdf/docs.pdf" target="_blank">PKP Docs</a>
+            </li>
+            <li>
+              <a href="pdf/forum.pdf" target="_blank">PKP Forum</a>
+            </li>
+            <li>
+              <a href="pdf/school.pdf" target="_blank">PKP School</a>
+            </li>
+            <li>
+              <a href="pdf/publishing-services.pdf" target="_blank">PKP Publishing Services</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+	<script>
+  // Dark-light mode toggler
+	;(function (window, document, undefined) {
+
+		'use strict';
+
+		if (!('localStorage' in window)) return;
+
+		var darkMode = document.querySelector('#darkLightToggler');
+		if (!darkMode) return;
+
+		darkMode.addEventListener('click', function (event) {
+			event.preventDefault();
+			document.documentElement.classList.toggle('dark-mode');
+			if ( document.documentElement.classList.contains('dark-mode') ) {
+				localStorage.setItem('darkMode', true);
+				return;
+			}
+			localStorage.removeItem('darkMode');
+		}, false);
+
+	})(window, document);
+
+  // Logo resizer
+  var r     = document.getElementById('resizer'),
+      size  = document.getElementById('size'),
+      elems = document.querySelectorAll('main svg');
+
+  r.addEventListener("input", function() {
+    elems.forEach(elems => {
+      elems.style.height = r.value + 'px';
+      size.innerHTML = r.value + 'px';
+    });
+  }, false);
+
+  </script>
+
+  {% include footer.html %}
+
+</body>
+
+</html>
