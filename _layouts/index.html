@@ -24,101 +24,178 @@
             <p><button href="#" id="darkLightToggler" title="Toggle between dark mode and light mode">Toggle colours</button></p>
             <p>
               Smaller <input id="resizer" type="range" min="40" max="200" value="" /> Larger<br/>
-              <small>Current height: <span id="size">200px</span></small>
+              <small>Current height: <span id="size">200</span>px</small>
             </p>
-            <p><a href="#">Contact us</a></p>
+            <p><a href="{{ site.baseurl }}{% link files/all-pkp-logos.zip %}">Download <strong>all</strong> logos</a></p>
           </div>
         </div>
       </div>
     </header>
 
     <section class="container logos">
-      <h2 class="sr-only">All logos by type</h2>
+      <h2 class="sr-only">All logos by usage</h2>
 
-      <section class="logos-main">
+      <section>
+        <h3>The Public Knowledge Project</h3>
+
+        <h4>Main wordmark</h4>
+        <div class="row">
+          <div class="col-3">
+            <figure class="logo">
+              {% include horizontal-pkp.svg %}
+              <figcaption>
+                <p>Should be the first choice when representing the PKP brand.</p>
+                <p>Use in page headers , page footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <h4>Secondary wordmark</h4>
         <div class="row">
           <div class="col-1">
-            <h3>Main logotype</h3>
-            <ul>
-              <li>Should be the first choice when representing the PKP brand</li>
-              <li>Horizontal</li>
-              <li>Use in page headers , page footers</li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <figure class="logo">{% include horizontal-pkp.svg %}</figure>
+            <figure class="logo">
+              {% include vertical-pkp.svg %}
+              <figcaption>
+                <p>Use in page footers only.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
       <hr/>
 
-      <section class="logos-column">
+      <section>
+        <h3>Software</h3>
+
+        <h4>Open Journal Systems (OJS)</h4>
         <div class="row">
           <div class="col-1">
-            <h3>Column</h2>
-            <ul>
-              <li>Vertical</li>
-              <li>Use in page footers</li>
-            </ul>
+            <figure class="logo">
+              {% include vertical-ojs.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
           </div>
-          <div class="col-2">
-            <figure class="logo">{% include vertical-pkp.svg %}</figure>
+          <div class="col-1">
+            <figure class="logo">
+              {% include slash-ojs.svg %}
+              <figcaption>
+                <p>Use in page footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
 
-            <figure class="logo">{% include vertical-ojs.svg %}</figure>
+        <h4>Open Monograph Press (OMP)</h4>
+        <div class="row">
+          <div class="col-1">
+            <figure class="logo">
+              {% include vertical-omp.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1">
+            <figure class="logo">
+              {% include slash-omp.svg %}
+              <figcaption>
+                <p>Use in page footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
 
-            <figure class="logo">{% include vertical-omp.svg %}</figure>
-
-            <figure class="logo">{% include vertical-ops.svg %}</figure>
+        <h4>Open Preprint Systems (OPS)</h4>
+        <div class="row">
+          <div class="col-1">
+            <figure class="logo">
+              {% include vertical-ops.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1">
+            <figure class="logo">
+              {% include slash-ops.svg %}
+              <figcaption>
+                <p>Use in page footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
       <hr/>
 
-      <section class="logos-superscript">
+      <section>
+        <h3>Services</h3>
+
+        <h4>Docs</h4>
         <div class="row">
-          <div class="col-1">
-            <h3>Superscript</h3>
-            <ul>
-              <li>Horizontal</li>
-              <li>Use in page headers , page footers</li>
-              <li>The superscript is used for “satellite” services, such as Docs, School, Publishing Services, Community Forum</li>
-            </ul>
-          </div>
           <div class="col-2">
-            <figure class="logo">{% include super-community-forum.svg %}</figure>
-
-            <figure class="logo">{% include super-docs.svg %}</figure>
-
-            <figure class="logo">{% include super-publishing-services.svg %}</figure>
-
-            <figure class="logo">{% include super-school.svg %}</figure>
+            <figure class="logo">
+              {% include super-docs.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
           </div>
         </div>
-      </section>
 
-      <hr/>
-
-      <section class="logos-fraction">
+        <h4>Community Forum</h4>
         <div class="row">
-          <div class="col-1">
-            <h3>Fraction</h3>
-            <ul>
-              <li>Vertical</li>
-              <li>Use in footers, always on bottom right</li>
-              <li>In-software branding only</li>
-            </ul>
+          <div class="col-2">
+            <figure class="logo">
+              {% include super-community-forum.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
           </div>
-          <div class="col-2" style="text-align: right;">
-            <figure class="logo">{% include slash-ojs.svg %}</figure>
+        </div>
 
-            <figure class="logo">{% include slash-omp.svg %}</figure>
+        <h4>School</h4>
+        <div class="row">
+          <div class="col-2">
+            <figure class="logo">
+              {% include super-school.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
 
-            <figure class="logo">{% include slash-ops.svg %}</figure>
+        <h4>Publishing Services</h4>
+        <div class="row">
+          <div class="col-2">
+            <figure class="logo">
+              {% include super-publishing-services.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
+
     </section>
   </main>
 
@@ -154,7 +231,7 @@
   r.addEventListener("input", function() {
     elems.forEach(elems => {
       elems.style.height = r.value + 'px';
-      size.innerHTML = r.value + 'px';
+      size.innerHTML = r.value;
     });
   }, false);
 

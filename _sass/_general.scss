@@ -50,7 +50,7 @@ img {
 }
 
 hr {
-  margin-bottom: 2rem;
+  margin: 3rem 0;
   border: 0;
   height: 2px;
   background-color: hsl(36, 7%, 14%);
@@ -148,13 +148,14 @@ main > header button {
 
 /* Dark mode */
 
-.dark-mode .logo {
-  background-color: hsl(211, 100%, 14%);
-}
+.dark-mode {
+  .logo, .logo figcaption {
+    background-color: hsl(211, 100%, 14%);
 
-.dark-mode svg path,
-.dark-mode svg path,
-.dark-mode svg path {
-  fill: #FFF;
-  stroke: #FFF;
+    svg path, p, a {
+      fill: #FFF;
+      stroke: #FFF;
+      color: #FFF;
+    }
+  }
 }
