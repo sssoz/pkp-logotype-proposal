@@ -1,0 +1,14 @@
+// Core fonts
+
+$serif: 			'Aleo', serif;
+$sans-serif: 	'Inter', sans-serif;
+
+@mixin sans() {
+	font-family: $sans-serif;
+	letter-spacing: -0.01em;
+}
+
+@mixin serif() {
+	font-family: $serif;
+	letter-spacing: 0.01em;
+}

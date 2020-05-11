@@ -1,7 +1,3 @@
-html {
-	font-size: 18px;
-}
-
 body {
 	color: hsl(36, 7%, 14%);
 }
@@ -143,33 +139,7 @@ main > header button {
   color: hsl(40, 91%, 53%);
 }
 
-/* Logos */
-.logos svg {
-  display: block;
-  max-width: 100%;
-  height: 100px;
-  width: auto;
-}
 
-.logos svg path {
-  fill: #282624;
-  stroke: #282624;
-}
-
-.intro {
-  margin-bottom: 5rem;
-}
-
-.logos-fraction svg {
-  margin-left: auto;
-}
-
-.logo {
-  display: block;
-  margin: 0 0 3rem 1rem;
-  padding: 3rem;
-  background-color: hsl(210, 18%, 96%);
-}
 
 /* Dark mode */
 
