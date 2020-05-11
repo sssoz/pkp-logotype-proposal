@@ -151,6 +151,7 @@ main > header button {
 .dark-mode {
   .logo, .logo figcaption {
     background-color: hsl(211, 100%, 14%);
+    border-color: #FFF;
 
     svg path, p, a {
       fill: #FFF;
