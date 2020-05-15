@@ -19,14 +19,12 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-2">
+          <div class="col-md-6">
             <h2>Learn how best to use PKP’s logotypes on your platform.</h2>
-            <p><button href="#" id="darkLightToggler" title="Toggle between dark mode and light mode">Toggle colours</button></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque sagittis consectetur. Etiam accumsan velit sed libero accumsan faucibus. Nullam ullamcorper euismod risus in laoreet. Nulla facilisi. Integer at aliquam dui, ut pellentesque turpis. Duis efficitur id risus quis semper. Etiam ultrices erat ut malesuada mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit egestas orci ac blandit. Vestibulum vehicula mauris ac ipsum mattis molestie.</p>
             <p>
-              Smaller <input id="resizer" type="range" min="40" max="200" value="" /> Larger<br/>
-              <small>Current height: <span id="size">200</span>px</small>
+              <a class="button button--is-cta" href="{{ site.baseurl }}{% link files/all-pkp-logos.zip %}">Download all logos</a>
             </p>
-            <p><a href="{{ site.baseurl }}{% link files/all-pkp-logos.zip %}">Download <strong>all</strong> logos</a></p>
           </div>
         </div>
       </div>
@@ -35,31 +33,31 @@
     <section class="container logos">
       <h2 class="sr-only">All logos by usage</h2>
 
+      <p>
+        <button href="#" id="darkLightToggler" title="Toggle between dark mode and light mode">Toggle colours</button>
+      </p>
+
       <section>
         <h3>The Public Knowledge Project</h3>
-
-        <h4>Main wordmark</h4>
         <div class="row">
-          <div class="col-3">
+          <div class="col-sm-8">
+            <h4>Main wordmark</h4>
             <figure class="logo">
               {% include horizontal-pkp.svg %}
               <figcaption>
                 <p>Should be the first choice when representing the PKP brand.</p>
                 <p>Use in page headers , page footers.</p>
-                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+                <p>Download in <a href="">SVG</a>, <a href="{{ site.baseurl }}{% link img/horizontal-pkp-black.png %}">PNG (black)</a> or <a href="{{ site.baseurl }}{% link img/horizontal-pkp-white.png %}">PNG (white)</a></p>
               </figcaption>
             </figure>
           </div>
-        </div>
-
-        <h4>Secondary wordmark</h4>
-        <div class="row">
-          <div class="col-1">
+          <div class="col-sm-4">
+            <h4>Secondary wordmark</h4>
             <figure class="logo">
               {% include vertical-pkp.svg %}
               <figcaption>
                 <p>Use in page footers only.</p>
-                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+                <p>Download in <a href="">SVG</a>, <a href="{{ site.baseurl }}{% link img/vertical-pkp-black.png %}">PNG (black)</a> or <a href="{{ site.baseurl }}{% link img/vertical-pkp-white.png %}">PNG (white)</a></p>
               </figcaption>
             </figure>
           </div>
@@ -73,22 +71,22 @@
 
         <h4>Open Journal Systems (OJS)</h4>
         <div class="row">
-          <div class="col-1">
+          <div class="col-xs-6 col-sm-4">
             <figure class="logo">
               {% include vertical-ojs.svg %}
               <figcaption>
                 <p>Use in page headers , footers.</p>
-                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+                <p>Download in <a href="">SVG</a>, <a href="{{ site.baseurl }}{% link img/vertical-ojs-black.png %}">PNG (black)</a> or <a href="{{ site.baseurl }}{% link img/vertical-ojs-white.png %}">PNG (white)</a></p>
               </figcaption>
             </figure>
           </div>
-          <div class="col-1">
+          <div class="col-xs-6 col-sm-4">
             <figure class="logo">
               {% include slash-ojs.svg %}
               <figcaption>
                 <p>Use in page footers of OJS installation.</p>
                 <p>Always aligned on the <strong>right</strong>.</p>
-                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+                <p>Download in <a href="">SVG</a>, <a href="{{ site.baseurl }}{% link img/slash-ojs-black.png %}">PNG (black)</a> or <a href="{{ site.baseurl }}{% link img/slash-ojs-white.png %}">PNG (white)</a></p>
               </figcaption>
             </figure>
           </div>
@@ -96,22 +94,22 @@
 
         <h4>Open Monograph Press (OMP)</h4>
         <div class="row">
-          <div class="col-1">
+          <div class="col-xs-6 col-sm-4">
             <figure class="logo">
               {% include vertical-omp.svg %}
               <figcaption>
                 <p>Use in page headers , footers.</p>
-                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+                <p>Download in <a href="">SVG</a>, <a href="{{ site.baseurl }}{% link img/vertical-omp-black.png %}">PNG (black)</a> or <a href="{{ site.baseurl }}{% link img/vertical-omp-white.png %}">PNG (white)</a></p>
               </figcaption>
             </figure>
           </div>
-          <div class="col-1">
+          <div class="col-xs-6 col-sm-4">
             <figure class="logo">
               {% include slash-omp.svg %}
               <figcaption>
                 <p>Use in page footers of OMP installations.</p>
                 <p>Always aligned on the <strong>right</strong>.</p>
-                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+                <p>Download in <a href="">SVG</a>, <a href="{{ site.baseurl }}{% link img/slash-omp-black.png %}">PNG (black)</a> or <a href="{{ site.baseurl }}{% link img/slash-omp-white.png %}">PNG (white)</a></p>
               </figcaption>
             </figure>
           </div>
@@ -119,7 +117,7 @@
 
         <h4>Open Preprint Systems (OPS)</h4>
         <div class="row">
-          <div class="col-1">
+          <div class="col-xs-6 col-sm-4">
             <figure class="logo">
               {% include vertical-ops.svg %}
               <figcaption>
@@ -128,7 +126,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col-1">
+          <div class="col-xs-6 col-sm-4">
             <figure class="logo">
               {% include slash-ops.svg %}
               <figcaption>
@@ -146,9 +144,9 @@
       <section>
         <h3>Services</h3>
 
-        <h4>Docs</h4>
         <div class="row">
-          <div class="col-2">
+          <div class="col-xs-6">
+            <h4>Docs</h4>
             <figure class="logo">
               {% include super-docs.svg %}
               <figcaption>
@@ -157,24 +155,8 @@
               </figcaption>
             </figure>
           </div>
-        </div>
-
-        <h4>Community Forum</h4>
-        <div class="row">
-          <div class="col-2">
-            <figure class="logo">
-              {% include super-community-forum.svg %}
-              <figcaption>
-                <p>Use in page headers , footers.</p>
-                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <h4>School</h4>
-        <div class="row">
-          <div class="col-2">
+          <div class="col-xs-6">
+            <h4>School</h4>
             <figure class="logo">
               {% include super-school.svg %}
               <figcaption>
@@ -183,11 +165,18 @@
               </figcaption>
             </figure>
           </div>
-        </div>
-
-        <h4>Publishing Services</h4>
-        <div class="row">
-          <div class="col-2">
+          <div class="col-xs-6">
+            <h4>Community Forum</h4>
+            <figure class="logo">
+              {% include super-community-forum.svg %}
+              <figcaption>
+                <p>Use in page headers , footers.</p>
+                <p>Download in <a href="">SVG</a> or <a href="">PNG</a></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-xs-6">
+            <h4>Publishing Services</h4>
             <figure class="logo">
               {% include super-publishing-services.svg %}
               <figcaption>
@@ -229,7 +218,7 @@
   // Logo resizer
   var r     = document.getElementById('resizer'),
       size  = document.getElementById('size'),
-      elems = document.querySelectorAll('main svg');
+      elems = document.querySelectorAll('.logo svg');
 
   r.addEventListener("input", function() {
     elems.forEach(elems => {

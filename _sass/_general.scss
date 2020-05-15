@@ -75,7 +75,7 @@ footer svg path {
 }
 
 main > header {
-  padding-top: 3rem;
+  padding: 3rem 0;
   background-color: hsl(211, 100%, 14%);
   color: #FFF;
 
@@ -86,14 +86,6 @@ main > header {
 
 main > header a {
   color: #FFF;
-}
-
-main > header button {
-  cursor: pointer;
-  padding: 1rem 1.5rem;
-  background-color: hsl(40, 91%, 53%);
-  border-color: hsl(40, 91%, 53%);
-  color: hsl(36, 7%, 14%);
 }
 
 

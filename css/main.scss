@@ -5,10 +5,11 @@
 
 // Import partials
 @import
-  "normalize",
-  "grid",
+  "vendors/normalize",
+  "vendors/bootstrap",
 	"fonts",
 	"general",
   "logo",
-  "range",
-	"typography";
+	"typography",
+  "button",
+  "range";
