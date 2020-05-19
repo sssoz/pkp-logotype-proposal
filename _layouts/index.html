@@ -26,6 +26,12 @@
               <a class="button button--is-cta" href="{{ site.baseurl }}{% link files/all-pkp-logos.zip %}">Download all logos</a>
             </p>
           </div>
+          <div class="col-md-6">
+            <nav class="page-nav nav"{% if page.sticky_sidenav %} data-spy="affix"{% endif %}>
+              <h2 class="page-nav__heading">Jump to:</h2>
+              {{ content | toc_only }}
+            </nav>
+          </div>
         </div>
       </div>
     </header>
