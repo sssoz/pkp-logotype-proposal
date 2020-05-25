@@ -1,0 +1,77 @@
+/* "Hero"-type of page header */
+
+.main-header {
+  padding-top: $spacing-06;
+  padding-bottom: $spacing-06;
+  background:
+    linear-gradient(90deg, $prussian-blue 15px, transparent 1%) center,
+    linear-gradient($prussian-blue 15px, transparent 1%) center, #465A74;
+  background-size: 16px 16px;
+  color: $white;
+
+  h2 {
+    margin-bottom: $spacing-06;
+    @include serif;
+  }
+
+  p {
+    margin-bottom: $spacing-06;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      background: $white;
+      color: $prussian-blue;
+    }
+  }
+
+  .button {
+    margin-right: $spacing-04;
+    color: $white;
+    border-color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $white;
+      color: $almost-black;
+    }
+  }
+
+  .button--primary {
+    background-color: $buttercup-yellow;
+    border-color: $buttercup-yellow;
+    color: $almost-black;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $prussian-blue;
+      border-color: $buttercup-yellow;
+      color: $buttercup-yellow;
+    }
+  }
+
+  .main-header__title {
+    display: table;
+    white-space: nowrap;
+    margin-bottom: $spacing-03;
+    @include serif;
+
+    &:after {
+      display: table-cell;
+      position: relative;
+      top: -$spacing-03;
+      left: $spacing-02;
+      width: $spacing-07;
+      content: ' ';
+      border-bottom: 2px solid $athens-blue;
+    }
+  }
+}

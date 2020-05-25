@@ -1,0 +1,32 @@
+/* Clickable screen preview */
+
+.preview {
+  display: block;
+  margin-bottom: $spacing-04;
+  overflow: hidden;
+  height: 175px;
+  width: auto;
+  background: $almost-black;
+  border: 1px solid $coal;
+  text-decoration: none;
+
+  &:hover {
+    border-color: $coal;
+
+    .preview__img {
+      margin-top: -400px;
+      -webkit-transition: all 400ms;
+      -moz-transition: all 400ms;
+      transition: all 400ms;
+    }
+
+    &:after {
+      display: block;
+      margin-top: $spacing-06;
+      content: attr(data-preview);
+      text-align: center;
+      font-weight: 800;
+      color: $buttercup-yellow;
+    }
+  }
+}

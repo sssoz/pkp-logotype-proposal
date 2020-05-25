@@ -1,0 +1,16 @@
+/* Main PKP logo */
+
+.logo {
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: $spacing-04;
+    margin: 10px 0;
+    height: 40px;
+    width: auto;
+
+    path {
+      fill: $white;
+    }
+  }
+}

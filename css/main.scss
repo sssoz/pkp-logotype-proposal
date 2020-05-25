@@ -6,11 +6,24 @@
 // Import partials
 @import
   "vendors/normalize",
-  "vendors/bootstrap",
-	"fonts",
-	"general",
-  "logo",
-	"typography",
-  "page-nav",
-  "button",
-  "range";
+
+  "base/fonts",
+  "base/colours",
+  "base/spacing",
+  "base/general",
+  "base/grid",
+  "base/typography",
+
+  "components/button",
+  "components/logo-sample",
+  "components/logo",
+  "components/preview",
+  "components/range-slider",
+  "components/sr-only",
+
+  "layout/main-header",
+  "layout/site-footer",
+  "layout/site-header",
+
+  "themes/dark-mode"
+;
