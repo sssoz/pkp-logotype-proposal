@@ -18,7 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: PKP Logotypes
+title: Logotypes
+tagline: "Learn how best to use PKP’s logotypes on your platform."
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque sagittis consectetur. Etiam accumsan velit sed libero accumsan faucibus. Nullam ullamcorper euismod risus in laoreet. Nulla facilisi. Integer at aliquam dui, ut pellentesque turpis. Duis efficitur id risus quis semper. Etiam ultrices erat ut malesuada mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit egestas orci ac blandit. Vestibulum vehicula mauris ac ipsum mattis molestie."
 
 # Build settings
 markdown: kramdown

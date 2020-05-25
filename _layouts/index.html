@@ -8,29 +8,28 @@
 	<p class="browserupgrade">You are using an outdated browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 	<![endif]-->
 
-	<header>
+  <header class="site-header">
 		<div class="container">
-      <h1 class="sr-only">PKP Logos</h1>
-      {% include horizontal-pkp.svg %}
+			<h1>
+        <a href="https://pkp.sfu.ca" target="_blank" rel="noopener" class="logo">
+          {% include logotype.svg %}
+          <span class="sr-only">{{ site.title }}</span>
+        </a>
+      </h1>
 		</div>
 	</header>
 
 	<main>
-    <header>
+    <header class="main-header">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2>Learn how best to use PKP’s logotypes on your platform.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque sagittis consectetur. Etiam accumsan velit sed libero accumsan faucibus. Nullam ullamcorper euismod risus in laoreet. Nulla facilisi. Integer at aliquam dui, ut pellentesque turpis. Duis efficitur id risus quis semper. Etiam ultrices erat ut malesuada mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit egestas orci ac blandit. Vestibulum vehicula mauris ac ipsum mattis molestie.</p>
+            <p class="main-header__title">{{ site.title }}</p>
+            <h2>{{ site.tagline }}</h2>
+            <p>{{ site.description }}</p>
             <p>
-              <a class="button button--is-cta" href="{{ site.baseurl }}{% link files/all-pkp-logos.zip %}">Download all logos</a>
+              <a class="button button--primary" href="{{ site.baseurl }}{% link files/all-pkp-logos.zip %}">Download all logos</a>
             </p>
-          </div>
-          <div class="col-md-6">
-            <nav class="page-nav nav"{% if page.sticky_sidenav %} data-spy="affix"{% endif %}>
-              <h2 class="page-nav__heading">Jump to:</h2>
-              {{ content | toc_only }}
-            </nav>
           </div>
         </div>
       </div>
